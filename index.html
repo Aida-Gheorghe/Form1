@@ -1,1 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
 
+    <div class="answer border">
+        <p class="fullName"></p>
+    </div>
+
+
+    <form id="puppies-form" class="border">
+        <section id="one">
+            <h1>Adopt Today!</h1>
+
+            <!-- text -->
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" required><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" required><br>
+
+            <!-- date -->
+            <label for="birthday">Birthday:</label><br>
+            <input type="date" id="birthday" name="birthday" required><br>
+            <button type="submit" id="date-btn"> Calculate age </button> <br><br>
+            <h3 id="your-age" ></h3> 
+
+            <!-- email -->
+            <label for="email">Enter your email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+
+            <!-- number -->
+            <label for="phone">Enter a phone number:</label><br><br>
+            <input type="tel" id="phone" name="phone" placeholder="123-455-678" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required><br><br>
+
+            <!-- textarea -->
+            <label for="addres">Address:</label><br>
+            <textarea name="addres" required></textarea><br>
+
+        </section>
+
+        <section id="two">
+            <!-- radio -->
+            <p>What gender do you prefer?</p>
+            <label for="male">
+            <input type="radio" id="male" name="gender" value="male" required checked>Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">It doesn't matter</label><br>
+
+             <!-- checkboxes -->
+            <p>What it looks like</p>
+            <input type="checkbox" id="big" name="big" value="big" checked>
+            <label for="big"> Big</label><br>
+            <input type="checkbox" id="medium" name="medium" value="medium">
+            <label for="medium"> Medium</label><br>
+            <input type="checkbox" id="small" name="small" value="small">
+            <label for="small"> Small</label><br>
+            <input type="checkbox" id="white" name="white" value="white">
+            <label for="white"> White</label><br>
+            <input type="checkbox" id="black" name="black" value="black">
+            <label for="black"> Black</label><br>
+            <input type="checkbox" id="other" name="other" value="other">
+            <label for="other"> Other</label><br>
+
+
+            <!-- select -->
+            <label for="animal">Choose age:</label>
+            <select id="animal" name="animal">
+            <option value="puppy">Puppy</option>
+            <option value="several-month">Several Month</option>
+            <option value="adult">Adult</option>
+            <option value="old">Old</option>
+            </select><br>
+
+            <!-- file -->
+            <label for="myfile">Before/After pic :)</label>
+            <input type="file" id="myfile" name="myfile"><br>
+    
+            <!-- reset -->
+            <input type="reset" id="reset">
+    
+            <!-- submit -->
+            <input type="submit" value="Submit" id="submit">
+
+
+        </section>
+    </form>
+
+</body>
+</html>
